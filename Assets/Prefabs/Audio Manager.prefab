@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7408175824853110472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7408175824853110484}
+  - component: {fileID: 7408175824853110485}
+  - component: {fileID: 7408175824853110474}
+  - component: {fileID: 7408175824853110475}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7408175824853110484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408175824853110472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7408175824853110485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408175824853110472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e098becc081a64f9872fc64c687131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7408175824853110474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408175824853110472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3cafe97d2843e4b9f1f5640791cbf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneSongs:
+  - sceneName: Menu Scene
+    clip: {fileID: 8300000, guid: 30b7bf49c44d2074281b1fe1420741db, type: 3}
+    volume: 1
+  - sceneName: Game Scene
+    clip: {fileID: 8300000, guid: 188b2532ed3b6b741adfc353fae2cb0c, type: 3}
+    volume: 1
+--- !u!114 &7408175824853110475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408175824853110472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73096c4498cd7d34c891830efd9ef053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - groupID: Enemy Shoot
+    group:
+    - {fileID: 8300000, guid: 1f1fbbc09268f2e4781fd619468817f2, type: 3}
+    - {fileID: 8300000, guid: 71765ec9de1d4c74c82c52dc25e0f516, type: 3}
+  - groupID: Impact
+    group:
+    - {fileID: 8300000, guid: 2485fbfef2b652f40bf56b2cc565986b, type: 3}
+    - {fileID: 8300000, guid: 893e2327e1fa24a45ab1a1d4c268858b, type: 3}
+    - {fileID: 8300000, guid: fb2cee46bc6085742852c801c7020e44, type: 3}
+    - {fileID: 8300000, guid: 088ddf5e24c0398419eda4cb5dc34560, type: 3}
+  - groupID: Enemy Death
+    group:
+    - {fileID: 8300000, guid: 7eb24e812fbb2674b93573eab1db1d40, type: 3}
+    - {fileID: 8300000, guid: 4073d895e79165c488db3e72226485f8, type: 3}
+  - groupID: Swipe
+    group:
+    - {fileID: 8300000, guid: 47ed52c9885aa564abee560ea767300f, type: 3}
+  - groupID: Player Hurt
+    group:
+    - {fileID: 8300000, guid: 5b982cd5470518f4b84d0692bf495b4f, type: 3}
+  - groupID: Player Death
+    group:
+    - {fileID: 8300000, guid: 8dcd8c629a81cf744bced133961f3a3a, type: 3}
